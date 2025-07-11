@@ -1,4 +1,4 @@
-# 🇻🇳 VN Location API - Danh sách Tỉnh/Thành phố mới sau sáp nhập (2025)
+# VN Location API - Danh sách Tỉnh/Thành phố mới sau sáp nhập (2025)
 
 > Một RESTful API cung cấp dữ liệu địa lý hành chính mới nhất của Việt Nam sau khi sáp nhập các đơn vị hành chính (2024–2025).
 > 📦 Xây dựng bằng **Node.js**, **TypeScript**, và **Express.js**
