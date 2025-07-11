@@ -31,3 +31,4 @@
 git clone https://github.com/conghoa004/VNLocationAPI.git
 cd VNLocationAPI
 npm install
+npm run dev
