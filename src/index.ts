@@ -1,9 +1,13 @@
 import express, { Request, Response } from 'express';
 const morgan = require('morgan');
 import path from 'path';
+const cors = require('cors');
 
 const app = express();
 const port = 3000;
+
+// Kích hoạt CORS cho tất cả domain
+app.use(cors());
 
 // Middleware
 app.use(morgan('dev')); // Ghi log theo format "dev"
