@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chọn Địa Chỉ Việt Nam</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/index.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="sparkle"></div>
+    <div class="container">
+        <h2 class="text-center"><i class="fas fa-map-marked-alt me-2 icon-spin"></i>Chọn Địa Chỉ</h2>
+        <form id="addressForm">
+            <div class="mb-3 form-group">
+                <label for="province" class="form-label">Tỉnh/Thành phố</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-city"></i></span>
+                    <select class="form-select" id="province" onchange="loadWards()">
+                        <option value="">Chọn Tỉnh/Thành phố</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-3 form-group">
+                <label for="ward" class="form-label">Xã/Phường/Thị trấn</label>
+                <div class="input-group">
+                    <span class="input-group-text"><i class="fas fa-home"></i></span>
+                    <select class="form-select" id="ward" disabled>
+                        <option value="">Chọn Xã/Phường/Đặc Khu</option>
+                    </select>
+                </div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="btn btn-reset" onclick="resetForm()">Đặt Lại</button>
+            </div>
+        </form>
+        <div id="alertBox" class="alert alert-info mt-3 d-none" role="alert"></div>
+    </div>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Particles.js -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="/js/index.js"></script>
+</body>
+</html>
