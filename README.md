@@ -104,3 +104,10 @@ Official website: 👉 https://vnlocationapi.onrender.com
 ## 📄 License
 
 Released under the [MIT License](LICENSE).
+
+---
+
+## ⚠️ Disclaimer
+
+**VNLocationAPI** is a community project. Data is collected and structured based on publicly available resolutions of the National Assembly.  
+This service is **not affiliated with any official government agency**.
