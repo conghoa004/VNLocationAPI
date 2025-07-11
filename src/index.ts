@@ -30,5 +30,5 @@ useRouter(app);
 
 // Khởi tạo server
 app.listen(port, () => {
-  console.log(`Server running at https://vnlocationapi.onrender.com/`);
+  console.log(`Server running at http://localhost:${port}`);
 });
