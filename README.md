@@ -1,31 +1,31 @@
-# VN Location API - Danh sách Tỉnh/Thành phố mới sau sáp nhập (2025)
+# VN Location API - Provinces & Cities of Vietnam After 2025 Mergers
 
-> Một RESTful API cung cấp dữ liệu địa lý hành chính mới nhất của Việt Nam sau khi sáp nhập các đơn vị hành chính (2024–2025).
-> 📦 Xây dựng bằng **Node.js**, **TypeScript**, và **Express.js**
-
----
-
-## 🚀 Tính năng
-
-* ✅ Cung cấp danh sách tỉnh/thành phố sau sáp nhập
-* ✅ Lấy danh sách xã/phường/đặc khu theo tỉnh/thành phố
-* ✅ Dữ liệu cập nhật từ **Nghị quyết Quốc hội 2024–2025**
-* ✅ CORS được bật sẵn, phản hồi định dạng chuẩn JSON
+> A RESTful API providing the latest administrative geographic data of Vietnam after the 2024–2025 administrative unit mergers.  
+> 📦 Built with **Node.js**, **TypeScript**, and **Express.js**
 
 ---
 
-## 🧰 Công nghệ sử dụng
+## 🚀 Features
 
-* [Node.js](https://nodejs.org/)
-* [TypeScript](https://www.typescriptlang.org/)
-* [Express.js](https://expressjs.com/)
-* [ts-node-dev](https://github.com/wclr/ts-node-dev) – hỗ trợ chạy server trong môi trường phát triển
+- ✅ Provide the updated list of provinces/cities after the 2024–2025 merger
+- ✅ Get wards/communes/special zones by province ID
+- ✅ Data updated based on **Vietnam National Assembly Resolutions 2024–2025**
+- ✅ CORS enabled by default, JSON response format
 
 ---
 
-## 📦 Cài đặt và khởi chạy
+## 🧰 Technologies Used
 
-### 1. Clone dự án
+- [Node.js](https://nodejs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Express.js](https://expressjs.com/)
+- [ts-node-dev](https://github.com/wclr/ts-node-dev) – supports hot-reloading during development
+
+---
+
+## 📦 Installation & Running
+
+### 1. Clone the project
 
 ```bash
 git clone https://github.com/conghoa004/VNLocationAPI.git
@@ -33,25 +33,25 @@ cd VNLocationAPI
 npm install
 ```
 
-### 2. Khởi chạy server
+### 2. Start the server
 
 ```bash
 npm run dev
 ```
 
-Sau khi khởi chạy, API sẵn sàng phục vụ tại `http://localhost:3000`
+After starting, the API will be available at `http://localhost:3000`
 
 ---
 
-## 📰 Tuyến API
+## 📰 API Endpoints
 
-### 1. Lấy danh sách tỉnh/thành phố
+### 1. Get list of provinces/cities
 
 ```
 GET /api/province
 ```
 
-**Phản hồi mẫu:**
+**Sample Response:**
 
 ```json
 [
@@ -68,19 +68,19 @@ GET /api/province
 
 ---
 
-### 2. Lấy danh sách xã/phường theo ID tỉnh/thành phố
+### 2. Get wards/communes by province ID
 
 ```
 GET /api/ward?id={province_id}
 ```
 
-**Ví dụ:**
+**Example:**
 
 ```
 GET /api/ward?id=02
 ```
 
-**Phản hồi mẫu:**
+**Sample Response:**
 
 ```json
 [
@@ -93,12 +93,14 @@ GET /api/ward?id=02
 ]
 ```
 
-## 🔗 Link triển khai
+---
 
-Website chính thức: 👉 https://vnlocationapi.onrender.com
+## 🔗 Deployment
+
+Official website: 👉 https://vnlocationapi.onrender.com
 
 ---
 
-## 📄 Giấy phép
+## 📄 License
 
-Phát hành theo [MIT License](LICENSE).
+Released under the [MIT License](LICENSE).
