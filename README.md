@@ -97,7 +97,7 @@ GET /api/ward?id=02
 
 ## 🔗 Deployment
 
-Official website: 👉 https://vnlocationapi.onrender.com
+Official website: 👉 https://vnlocation.alwaysdata.net/
 
 ---
 
